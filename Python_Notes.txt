@@ -1,0 +1,46 @@
+Referances
+https://synechron.sharepoint.com/sites/SyneDMS/MarComm/ServicePractice%20Specific%20Collaterals/Forms/AllItems.aspx?RootFolder=%2Fsites%2FSyneDMS%2FMarComm%2FServicePractice%20Specific%20Collaterals%2FAI%20Data%20Science%20Accelerators&FolderCTID=0x012000C2AD7B02C006944B8C0F9901C2E061F0&View=%7BB6FDB97A-1BBC-47AC-9FAF-71F8E394E238%7D
+https://pypi.org/search/?q=parser
+https://tiobe.com/tiobe-index/
+
+Day-1
+~~~~~~~~
+
+Notes --
+*** Open source library repository --> python.org --> pypi option at top
+
+	1) Python is an interpreted language.
+	2) PVM - Python Virtual Machine -- Interpreter (generating bytecode) and output machine code.
+		a) PYC - Python cache -- default folder __pycache__
+		b) PYC is platform independent code. Does not contain any OS information.
+	3) In python everthing is object
+	4) programs are dynamically.
+	5) Python libraries are now matured enough to replace 100% R-Programming.
+	6) 
+		
+		
+		
+Deployment procedure
+-------------------------------
+1) Executable
+2) Wheel
+
+
+Day-2
+~~~~~~~~
+*** Files
+1) Versionaning - For production deployment. - Create virtual environment.
+	a) Run module 
+		python -m venv "name"
+	b) Running files from here will still use default path, and not the vitual path. To use virtual environment, execute below command
+		> cd myvenv
+		> cd scripts
+		> activate / deactivate
+	c) Configure pycharm to use this newly created virtual environment
+		> Pycharm 	--> File
+					--> Settings
+					--> Project -> select Project -> Project Interpreter
+					--> If it is not listed --> Show all -> click on +
+					--> Click on existing environment -> Goto Project folder -> Vitual Env folder -> Scripts -> Python.exe
+	
+	
