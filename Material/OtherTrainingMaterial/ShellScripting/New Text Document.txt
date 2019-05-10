@@ -1,0 +1,89 @@
+import bottle
+#import flask
+#note : for flask   app = flask.Flask('myapp')      regular express not supported in flask ,
+#@app.route('/verifylogin', methods=['get','post'])
+
+
+app = bottle.Bottle()
+
+
+@app.error(404)
+def errorpage(e):
+    return 'page under construction'
+
+@app.route('/')
+def homepage():
+    return 'welcome'
+@app.route('/<name>')
+def aboutpage(name):
+    return '<b>about</b>'
+
+@app.route('/emp/<id:int>')
+def empid(id):
+    return 'your id :'+str(id)
+# execute and click on link ..... on browser pass arguments like about and  like this  http://127.0.0.1:45678/emp/121212
+
+
+
+
+
+@app.route('/path/<p:path>')
+def fullpath(p):
+    return 'path received:'+str(p)  #http://127...456/user/local/abc.jpg #http://127.0.0.1:45678/emp/121212
+#http://127.0.0.1:45678/reg/123abc    --  output should be Received :123abc
+@app.route('/reg/<r:re:[a-z0-9]+>')
+def regex(r):
+    return 'Received :' +str(r)
+
+
+
+@app.route('/red')
+def red():
+    return bottle.redirect('https://www.google.com')
+
+
+@app.route('/login')
+def loginpage():
+    return '''<form action='/verifylogin' method='post'>
+    USER NAME:<input type='text' name='uname' /> <br>
+    PASSWORD:<input type='password' name='pw' /> <br>
+    <input type='submit' value='LOGIN' />
+    </form>
+    '''
+#Note execute -> click on link -> http://127.0.0.1:45678/login    .... login we are writing bcoz app.rout(/login)
+
+
+@app.post('/verifylogin')
+def vlogin():
+    u=bottle.request.forms.get('uname')   #u=flask.request.forms.get('name')
+    p=bottle.request.forms.get('pw')      #
+    if not ( u=='abc' and p=='xyz'):
+        return 'login failed'
+    else:
+        return 'login success'
+
+    #http://127.0.0.1:45678/login   -> enter username =abc  pwd = 123   output should be login successfully .
+
+
+app.run(port=45678) #host='mention IP address of host here '
+
+
+#flask                        #bottle
+#.tpl                        #.html
+#%for                        #{% for %}
+#%end                        #{% endfor %}
+#{{variable}}                #{{ var }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

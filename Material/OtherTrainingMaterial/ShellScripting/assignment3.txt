@@ -1,0 +1,9 @@
+1) Write shell script to read 1 integer number and find out if the number is odd or even
+2) Write shell script to read 2 numbers and find biggest one
+3) Write shell script to read 3 numbers and find biggest one among them
+4) Write a shell script to read filename and find following info
+      a)  If the given file exist
+      b)  If exist, if it is a file or directory
+      c)  If file, whether its size is non zero
+      d)  If file, whether it has execute permission
+      e)  If directory then print message that "Given Name is Directory'

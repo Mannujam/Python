@@ -1,0 +1,11 @@
+8) Write shell script to read 1 integer number and find out if the number is odd or even
+9) Write shell script to read 2 numebers and find biggest one
+10 Write shell script to read 3 numbers and find biggest one among them
+11) Write a shell script to read filename and find follwing info
+      a)  If the given file exist
+      b)  If exist, if it is a file or directory
+      c)  If file, whether its size is non zero
+      d)  If file, whether it has execute permission
+      e)  If directory then print message that "Given Name is Directory'
+12) Write a shell script to read 2 numbers and display a menu to let user select any of the 5 atithemetic operations (+,-,*,/,%) and do the calculation accordingly also display the operation performed and result.
+13) Write a menu script to give user a choice perform copy, rename or delete operation on given filename. Read filename and destination (2 variables).
