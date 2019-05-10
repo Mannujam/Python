@@ -44,3 +44,62 @@ Day-2
 					--> Click on existing environment -> Goto Project folder -> Vitual Env folder -> Scripts -> Python.exe
 	
 	
+Day-3
+~~~~~~~~~~
+1) working with db and csv files, csv/excel library --> datatypes are insufficient to use, like list,dictionaries, etc. for add update, delete etc
+2) For this pandas can be used for using 2D data.
+	a) series (1D)
+	b) dataframe (2D)
+	
+	
+Day-4
+~~~~~~~~~~
+Bottle & Flash are micro web development - used for small sites (internal)
+Django - Is used for big sites. Unlike MVC, Django is MVT (Model View Template). Template will take care of Controller part.
+
+Django
+~~~~~~~~~~~~~~
+** Profressional version of pycharm will allow to create the django folder structure.
+** for community version can create from command prompt.
+
+Notes - Djnago provides by default admin page. server url/admin
+commands
+===================
+command prompt ==>
+
+\folder\venv\scripts>> activate
+(venv) \folder\venv\scripts>> pip install django
+(venv) \folder\venv\scripts>> cd..
+(venv) \folder\venv>> django-admin startproject "projectName"
+(venv) \folder\venv\djangoPrj>> python manage.py makemigrations					## to create superuser for admin page
+(venv) \folder\venv\djangoPrj>> python manage.py migrate
+(venv) \folder\venv\djangoPrj>> python manage.py createsuperuser
+
+(venv) \folder\venv\djangoPrj>> python manage.py startapp home					## this step is repeated whenever you add new app (page) - create app
+														/
+	In pycharm --> project --> settings.py --> add 'home' to INSTALLED_APPS = []
+	
+
+
+
+
+command prompt ==> to run server
+
+(venv) \folder\venv\djangoPrj>> django-admin manage.py runserver
+(venv) \folder\venv>> 
+
+
+
+***** Creating executable
+Windows --> use py2exe, pyinstaller
+other platform --> pyinstaller
+
+
+
+Day-5
+~~~~~~~~~~~
+Data Science - Analysis
+-----------------------
+1) Divided in 2 category - Supervised / unsupervised learning
+	a) Defined / structure data - Supervised			- sklearn
+	b) UnDefined / unstructure data - UnSupervised		- 

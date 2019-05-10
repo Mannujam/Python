@@ -1,6 +1,0 @@
-123.123.123.123	26/Apr/2000	wpaper.gif	http://www.jafsoft.com/asctortf/	Mozilla	4.05	
-123.123.123.123	26/Apr/2000	wpaper.gif	http://search.netscape.com/Computers/Data_Formats/Document/Text/RTF	Mozilla	4.05	
-123.123.123.123	26/Apr/2000	5star2000.gif	http://www.jafsoft.com/asctortf/	Mozilla	4.05	
-123.123.123.123	26/Apr/2000	5star.gif	http://www.jafsoft.com/asctortf/	Mozilla	4.05	
-123.123.123.123	26/Apr/2000	a2hlogo.jpg	http://www.jafsoft.com/asctortf/	Mozilla	4.05	
-123.123.123.123	26/Apr/2000	a2hlogo.jpg	http://www.jafsoft.com/asctortf/	Mozilla	4.05	
